@@ -36,6 +36,7 @@ pub(crate) fn optional_into_path_to_cstr<T: Into<PathBuf>>(path: Option<T>) -> R
 }
 
 /// Macro for simplifying an `if let Some(val) {} else {}` statement.
+#[macro_export]
 macro_rules! if_let_some {
     ($option: ident, $val_name: ident, $some: expr, $none: expr) => {
         if let Some($val_name) = $option {
@@ -47,6 +48,7 @@ macro_rules! if_let_some {
 }
 
 /// Macro for preparing for an unsafe function execution and reacting to it's error code
+#[macro_export]
 macro_rules! unsafe_wrapper {
     ($errcode: ident, $unsafe_block: block) => {
         let $errcode: LibErrorCode;

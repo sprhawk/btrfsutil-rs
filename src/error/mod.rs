@@ -9,7 +9,7 @@ pub(crate) mod lib;
 
 pub use glue::GlueError;
 pub use lib::LibError;
-pub(crate) use lib::LibErrorCode;
+pub use lib::LibErrorCode;
 
 /// Generic library error type. May be either a [LibError] or a [GlueError].
 ///

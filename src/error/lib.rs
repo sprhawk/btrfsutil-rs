@@ -14,7 +14,7 @@ use thiserror::Error;
 /// Error code returned by the [libbtrfsutil] C library.
 ///
 /// [libbtrfsutil]: https://github.com/kdave/btrfs-progs/tree/master/libbtrfsutil
-pub(crate) type LibErrorCode = u32;
+pub type LibErrorCode = u32;
 
 /// Errors that can be raised by the [libbtrfsutil] C library itself.
 ///

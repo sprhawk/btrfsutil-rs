@@ -48,7 +48,7 @@
 //! }
 //! ```
 
-#![deny(missing_docs)]
+// #![deny(missing_docs)]
 
 pub mod bindings {
     //! Raw bindings to [libbtrfsutil](https://github.com/kdave/btrfs-progs/tree/master/libbtrfsutil).
@@ -70,7 +70,7 @@ extern crate bitflags;
 #[macro_use]
 pub mod error;
 #[macro_use]
-mod common;
+pub mod common;
 pub mod qgroup;
 pub mod subvolume;
 
